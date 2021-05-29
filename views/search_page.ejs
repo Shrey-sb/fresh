@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+<div class="hospital-list">
+  <table class="table table-striped">
+    <thead>
+      <th>Name</th>
+      <th>State</th>
+      <th>review</th>
+      <th>highest_score</th>
+    </thead>
+    <tbody>
+  <%       for(var i=0;i<detailsofthehospital.length;i++){  %>
+             <tr>
+            <td><%=detailsofthehospital[i].name %></td>
+            <td><%=detailsofthehospital[i].rating %></td>
+            <td><%=detailsofthehospital[i].highest_score%></td>
+            <td><%=detailsofthehospital[i].state %></td>
+           </tr>
+    <%     }       %>
+
+
+
+
+
+
+
+
+  </table>
+</div>
+
+
+
+<%- include('partials/footer') %>
